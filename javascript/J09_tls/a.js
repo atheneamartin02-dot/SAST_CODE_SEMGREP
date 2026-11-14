@@ -4,6 +4,6 @@ Analiza el archivo con SAST; no es necesario ejecutarlo. Compara las dos variant
 
 const https = require("node:https");
 function consultar(url, callback) {
-    return https.get(url, { rejectUnauthorized: false }, callback);
+    return https.get(url, callback);
 }
 module.exports = { consultar };
